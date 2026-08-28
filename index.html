@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeBlock | Tecnología White Label para Desarrolladoras Inmobiliarias</title>
     
-    <!-- CookieConsent v3 CSS (PDF 1) -->
+    <!-- CookieConsent v3 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0/dist/cookieconsent.css">
 
     <!-- Tailwind CSS CDN -->
@@ -13,12 +13,11 @@
     <!-- Tipografía Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Google Tag Manager / GA4 / Clarity Init (PDF 1) -->
+    <!-- Google Tag Manager / GA4 / Clarity Init -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
 
-        // Configuración inicial de Consent Mode v2 (PDF 1)
         gtag('consent', 'default', {
             'analytics_storage': 'denied',
             'ad_storage': 'denied',
@@ -27,7 +26,6 @@
             'security_storage': 'granted'
         });
 
-        // Snippet de Microsoft Clarity (Bloqueado hasta tener consentimiento)
         function initClarity() {
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -36,7 +34,6 @@
             })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
         }
 
-        // Evento genérico para capturar interacciones en GA4
         function trackGAEvent(eventName, params = {}) {
             if (window.gtag) {
                 gtag('event', eventName, params);
@@ -61,15 +58,14 @@
         }
     </script>
     <style>
-        /* PDF 1: Aumento de escala tipográfica general para Mobile UX (+2px) */
         body { 
             background-color: #0B0E14; 
             color: #F3F4F6; 
             font-family: 'Inter', sans-serif; 
-            font-size: 16px; /* Base aumentada */
+            font-size: 17px; 
         }
         @media (max-width: 640px) {
-            body { font-size: 15px; }
+            body { font-size: 16px; }
         }
         input[type=range] { accent-color: #00E5FF; }
     </style>
@@ -88,52 +84,35 @@
                 </svg>
                 <span class="text-2xl font-extrabold tracking-tight text-white">We<span class="text-accentCyan">Block</span></span>
             </div>
-            <a href="#" class="border border-gray-600 hover:border-accentCyan text-gray-300 hover:text-accentCyan transition-all duration-200 px-4 py-2 rounded-md text-xs sm:text-sm font-semibold">Acceso Clientes</a>
+            <a href="#" class="border border-gray-600 hover:border-accentCyan text-gray-300 hover:text-accentCyan transition-all duration-200 px-4 py-2 rounded-md text-sm font-semibold">Acceso Clientes</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
     <section class="pt-32 pb-16 px-6 max-w-5xl mx-auto text-center">
-        <!-- PDF 1: Etiqueta superior INTACTA -->
-        <span class="inline-block border border-accentCyan/30 text-accentCyan bg-accentCyan/10 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide mb-6">
+        <span class="inline-block border border-accentCyan/30 text-accentCyan bg-accentCyan/10 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-6">
             TECNOLOGÍA WHITE LABEL PARA DESARROLLADORAS
         </span>
         
-        <!-- PDF 1: Remate del título modificado a "en 7 días y a Costo $0. Solo ganamos si tú ganas." -->
         <h1 class="text-3xl sm:text-5xl font-extrabold mb-6 leading-tight tracking-tight">
             Acelera el fondeo de tus proyectos inmobiliarios lanzando tu propia App de Inversión <span class="text-accentCyan">en 7 días y a Costo $0. Solo ganamos si tú ganas.</span>
         </h1>
         
-        <!-- PDF 1: Texto explicativo INTACTO -->
-        <h2 class="text-base sm:text-xl text-gray-400 mb-10 max-w-3xl mx-auto font-normal leading-relaxed">
+        <h2 class="text-lg sm:text-xl text-gray-300 mb-10 max-w-3xl mx-auto font-normal leading-relaxed">
             Diversifica tu comercialización vendiendo unidades completas y módulos de m² directo desde el celular de tus inversores, manteniendo el 100% de la cobranza bajo tu control.
         </h2>
         
-        <!-- PDF 1: Video Demo con Gate / Bloqueo por Email -->
-        <div class="relative w-full max-w-4xl mx-auto aspect-video bg-darkCard rounded-2xl shadow-glow border border-gray-800 overflow-hidden mb-10 group">
-            <div id="videoIframeContainer" class="w-full h-full pointer-events-none filter blur-sm transition-all duration-300">
-                <iframe id="vslIframe" src="https://player.vimeo.com/video/76979871?autopause=0&autoplay=0" class="w-full h-full" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-            </div>
-            
-            <!-- Gate Overlay -->
-            <div id="videoGateOverlay" class="absolute inset-0 bg-darkBg/80 backdrop-blur-md flex flex-col items-center justify-center p-6 text-center z-10">
-                <div class="max-w-md w-full bg-darkCard p-6 rounded-xl border border-accentCyan/40 shadow-glow">
-                    <svg class="w-12 h-12 text-accentCyan mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                    <h3 class="text-lg font-bold text-white mb-2">Desbloquear Demo Interactiva</h3>
-                    <p class="text-xs text-gray-400 mb-4">Ingresa tu email profesional para ver la presentación y acceder al simulador.</p>
-                    <div class="flex flex-col gap-3">
-                        <input type="email" id="gateEmail" placeholder="Tu Email Profesional" class="bg-[#0B0E14] border border-gray-700 rounded-lg px-4 py-3 text-sm text-white focus:border-accentCyan outline-none" required>
-                        <button onclick="desbloquearVideo()" class="bg-accentCyan hover:bg-cyan-400 text-darkBg font-bold px-6 py-3 rounded-lg transition-all duration-200 text-sm">
-                            VER DEMO AHORA
-                        </button>
-                    </div>
-                </div>
-            </div>
+        <!-- VIDEO LOCAL -->
+        <div class="relative w-full max-w-4xl mx-auto aspect-video bg-darkCard rounded-2xl shadow-glow border border-gray-800 overflow-hidden mb-10">
+            <video controls playsinline class="w-full h-full object-cover">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
         </div>
 
         <div class="max-w-lg mx-auto bg-darkCard p-2 rounded-xl border border-gray-700/80 shadow-lg flex flex-col sm:flex-row gap-2">
-            <input type="email" id="heroEmail" placeholder="Tu Email Profesional" class="w-full bg-transparent text-white px-4 py-3 focus:outline-none text-sm" required>
-            <button onclick="ejecutarPaso1()" class="bg-accentCyan hover:bg-cyan-400 text-darkBg font-bold px-6 py-3 rounded-lg transition-all duration-200 text-sm whitespace-nowrap">
+            <input type="email" id="heroEmail" placeholder="Tu Email Profesional" class="w-full bg-transparent text-white px-4 py-3 focus:outline-none text-base" required>
+            <button onclick="ejecutarPaso1()" class="bg-accentCyan hover:bg-cyan-400 text-darkBg font-bold px-6 py-3 rounded-lg transition-all duration-200 text-sm sm:text-base whitespace-nowrap">
                 EVALUAR PROYECTO
             </button>
         </div>
@@ -142,10 +121,10 @@
     <!-- BARRA DE COMPATIBILIDAD -->
     <section class="bg-darkCard/60 border-y border-gray-800/80 py-8 px-6">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="text-xs sm:text-sm uppercase tracking-wider text-gray-400 font-semibold mb-6">
+            <p class="text-xs sm:text-sm uppercase tracking-wider text-gray-300 font-semibold mb-6">
                 100% Compatible con las Estructuras Legales y Contables de la República Argentina
             </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs sm:text-sm text-gray-300 font-medium">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm sm:text-base text-gray-200 font-medium">
                 <div class="bg-[#0B0E14] border border-gray-800 p-3 rounded-lg">✓ Fideicomisos al Costo</div>
                 <div class="bg-[#0B0E14] border border-gray-800 p-3 rounded-lg">✓ Boletos Privados</div>
                 <div class="bg-[#0B0E14] border border-gray-800 p-3 rounded-lg">✓ Cesiones de Derechos</div>
@@ -154,64 +133,64 @@
         </div>
     </section>
 
-    <!-- PDF 2: LISTA DE FUNCIONALIDADES INCLUIDAS EN WEBLOCK -->
+    <!-- FUNCIONALIDADES INCLUIDAS -->
     <section class="py-16 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-3">Funcionalidades Principales de la Plataforma</h2>
-            <p class="text-sm text-gray-400">Infraestructura tecnológica White Label lista para operar en tu empresa.</p>
+            <p class="text-base text-gray-300">Infraestructura tecnológica White Label lista para operar en tu empresa.</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Firma Digital e Integridad</h4>
-                <p class="text-xs text-gray-300">Validación mediante Firma OTP y sellado criptográfico inmutable SHA-256.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Firma Digital e Integridad</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Validación mediante Firma OTP y sellado criptográfico inmutable SHA-256.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Asistente Virtual IA</h4>
-                <p class="text-xs text-gray-300">Inteligencia Artificial local activa 24/7 capacitada con memorias descriptivas y planos del proyecto.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Asistente Virtual IA</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Inteligencia Artificial local activa 24/7 capacitada con memorias descriptivas y planos del proyecto.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Modelo de Venta Dual</h4>
-                <p class="text-xs text-gray-300">Comercialización de unidades completas en pozo o participaciones/venta por m².</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Modelo de Venta Dual</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Comercialización de unidades completas en pozo o participaciones/venta por m².</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Simulador de Rendimiento</h4>
-                <p class="text-xs text-gray-300">Herramienta interactiva de cálculo financiero con ajuste de CAC en tiempo real.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Simulador de Rendimiento</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Herramienta interactiva de cálculo financiero con ajuste de CAC en tiempo real.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Gestión de Cuotas y Cobranza</h4>
-                <p class="text-xs text-gray-300">Cuotas auto-ajustables y sistema de alertas automáticas al teléfono móvil.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Gestión de Cuotas y Cobranza</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Cuotas auto-ajustables y sistema de alertas automáticas al teléfono móvil.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Conciliación de Pagos</h4>
-                <p class="text-xs text-gray-300">Carga de comprobantes desde la app con validación centralizada en el panel admin.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Conciliación de Pagos</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Carga de comprobantes desde la app con validación centralizada en el panel admin.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Bóveda Multimedia</h4>
-                <p class="text-xs text-gray-300">Galería comparativa (Render vs. Real), videos 3D y reportes técnicos de avance de obra.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Bóveda Multimedia</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Galería comparativa (Render vs. Real), videos 3D y reportes técnicos de avance de obra.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Agendamiento de Visitas</h4>
-                <p class="text-xs text-gray-300">Sincronización automática de turnos para visitas al desarrollo con agenda corporativa.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Agendamiento de Visitas</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Sincronización automática de turnos para visitas al desarrollo con agenda corporativa.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Plataforma Marca Blanca</h4>
-                <p class="text-xs text-gray-300">Solución B2B lista para operar sin costes ni tiempos de desarrollo propio.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Plataforma Marca Blanca</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Solución B2B lista para operar sin costes ni tiempos de desarrollo propio.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Interfaz Optimizada (UI/UX)</h4>
-                <p class="text-xs text-gray-300">Pantalla de inicio con acceso inmediato al patrimonio y grillas simétricas de proyectos.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Interfaz Optimizada (UI/UX)</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Pantalla de inicio con acceso inmediato al patrimonio y grillas simétricas de proyectos.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Cumplimiento Institucional</h4>
-                <p class="text-xs text-gray-300">Terminología Fintech/B2B estandarizada (Unidades, Adhesiones y Participaciones).</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Cumplimiento Institucional</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Terminología Fintech/B2B estandarizada (Unidades, Adhesiones y Participaciones).</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Escala Tipográfica Aumentada</h4>
-                <p class="text-xs text-gray-300">Tipografía y etiquetas ampliadas para lectura rápida en cualquier pantalla o dispositivo.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Escala Tipográfica Aumentada</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Tipografía y etiquetas ampliadas para lectura rápida en cualquier pantalla o dispositivo.</p>
             </div>
             <div class="bg-darkCard border border-gray-800 p-6 rounded-xl hover:border-accentCyan/50 transition md:col-span-2 lg:col-span-1">
-                <h4 class="text-accentCyan font-bold text-base mb-2">Identidad Sonora</h4>
-                <p class="text-xs text-gray-300">Notificaciones push con audio distintivo para confirmación de pagos y rendimiento.</p>
+                <h4 class="text-accentCyan font-bold text-lg mb-2">Identidad Sonora</h4>
+                <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Notificaciones push con audio distintivo para confirmación de pagos y rendimiento.</p>
             </div>
         </div>
     </section>
@@ -223,8 +202,8 @@
             <div>
                 <h3 class="text-2xl font-bold mb-6">Modelo Tradicional vs. Solución WeBlock</h3>
                 <div class="bg-darkCard border border-gray-800 rounded-xl overflow-hidden shadow-sm">
-                    <table class="w-full text-left text-xs sm:text-sm">
-                        <thead class="bg-gray-900/80 border-b border-gray-800 text-gray-400">
+                    <table class="w-full text-left text-sm sm:text-base">
+                        <thead class="bg-gray-900/80 border-b border-gray-800 text-gray-300">
                             <tr>
                                 <th class="p-4">CRITERIO DE EVALUACIÓN</th>
                                 <th class="p-4">DESARROLLO PROPIO TRADICIONAL</th>
@@ -233,26 +212,23 @@
                         </thead>
                         <tbody class="divide-y divide-gray-800">
                             <tr>
-                                <td class="p-4 font-semibold text-gray-300">Inversión Inicial</td>
-                                <!-- PDF 1: Estimación ajustada a $120.000 USD -->
-                                <td class="p-4 text-red-400">+$120.000 USD</td>
+                                <td class="p-4 font-semibold text-gray-200">Inversión Inicial</td>
+                                <td class="p-4 text-red-400 font-medium">+$120.000 USD</td>
                                 <td class="p-4 text-accentCyan font-bold">$0 Costo Inicial</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-gray-300">Tiempo de Salida</td>
-                                <td class="p-4 text-gray-400">8 a 12 Meses</td>
+                                <td class="p-4 font-semibold text-gray-200">Tiempo de Salida</td>
+                                <td class="p-4 text-gray-300">8 a 12 Meses</td>
                                 <td class="p-4 text-white font-medium">7 a 10 Días</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-gray-300">Infraestructura Técnica</td>
-                                <!-- PDF 1: Cambiado por "Mantenimiento incluido" -->
-                                <td class="p-4 text-gray-400">Mantenimiento a tu cargo</td>
+                                <td class="p-4 font-semibold text-gray-200">Infraestructura Técnica</td>
+                                <td class="p-4 text-gray-300">Mantenimiento a tu cargo</td>
                                 <td class="p-4 text-white font-medium">Mantenimiento incluido</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold text-gray-300">Riesgo Técnico / Financiero</td>
-                                <!-- PDF 1: Cambiado por "4% a éxito sobre recaudación" -->
-                                <td class="p-4 text-gray-400">Riesgo total asumido</td>
+                                <td class="p-4 font-semibold text-gray-200">Riesgo Técnico / Financiero</td>
+                                <td class="p-4 text-gray-300">Riesgo total asumido</td>
                                 <td class="p-4 text-accentCyan font-bold">4% a éxito sobre recaudación</td>
                             </tr>
                         </tbody>
@@ -260,47 +236,45 @@
                 </div>
             </div>
 
-            <!-- SIMULADOR INTERACTIVO (PDF 1) -->
+            <!-- SIMULADOR INTERACTIVO -->
             <div class="bg-darkCard p-6 sm:p-8 rounded-2xl border border-gray-800 shadow-glow relative">
                 <h3 class="text-xl font-bold mb-2">Simulador de Ahorro por Velocidad</h3>
-                <p class="text-xs text-gray-400 mb-6">Calcula el costo inflacionario y de obra que evitas al salir al mercado en 7 días.</p>
+                <p class="text-sm text-gray-300 mb-6">Calcula el costo inflacionario y de obra que evitas al salir al mercado en 7 días.</p>
                 
                 <div class="space-y-6">
                     <div>
-                        <div class="flex justify-between text-sm mb-2">
-                            <span class="text-gray-400">GDV / Valor Total del Desarrollo:</span>
+                        <div class="flex justify-between text-sm sm:text-base mb-2">
+                            <span class="text-gray-300">GDV / Valor Total del Desarrollo:</span>
                             <span class="text-white font-bold" id="gdvDisplay">$2.000.000 USD</span>
                         </div>
-                        <!-- PDF 1: Tope de GDV subido a $100.000.000 USD -->
                         <input type="range" id="gdvSlider" min="500000" max="100000000" step="500000" value="2000000" class="w-full h-2 bg-gray-800 rounded-lg cursor-pointer">
                     </div>
 
                     <div>
-                        <div class="flex justify-between text-sm mb-2">
-                            <span class="text-gray-400">Plazo de Venta Tradicional:</span>
+                        <div class="flex justify-between text-sm sm:text-base mb-2">
+                            <span class="text-gray-300">Plazo de Venta Tradicional:</span>
                             <span class="text-white font-bold" id="monthsDisplay">24 Meses</span>
                         </div>
-                        <!-- PDF 1: Slider ampliado de 12 a 72 meses -->
                         <input type="range" id="monthsSlider" min="12" max="72" step="1" value="24" class="w-full h-2 bg-gray-800 rounded-lg cursor-pointer">
                     </div>
 
                     <div class="grid grid-cols-2 gap-3 pt-2">
                         <div class="bg-[#0B0E14] p-4 rounded-xl border border-gray-800 text-center">
-                            <span class="text-[10px] text-gray-500 uppercase tracking-wider block font-semibold">TIEMPO AHORRADO</span>
-                            <span class="text-lg font-bold text-white" id="outMeses">-18 Meses</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block font-semibold">TIEMPO AHORRADO</span>
+                            <span class="text-lg sm:text-xl font-bold text-white" id="outMeses">-18 Meses</span>
                         </div>
                         <div class="bg-[#0B0E14] p-4 rounded-xl border border-gray-800 text-center">
-                            <span class="text-[10px] text-gray-500 uppercase tracking-wider block font-semibold">RIESGO / COSTO EVITADO</span>
-                            <span class="text-lg font-bold text-green-400" id="outAhorro">+$360.000 USD</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block font-semibold">RIESGO / COSTO EVITADO</span>
+                            <span class="text-lg sm:text-xl font-bold text-green-400" id="outAhorro">+$360.000 USD</span>
                         </div>
                     </div>
 
                     <div class="bg-accentCyan/10 border border-accentCyan/40 p-4 rounded-xl text-center">
-                        <span class="text-sm font-bold text-accentCyan block" id="outNeto">Superávit Neto Estimado: +$280.000 USD</span>
-                        <span class="text-[11px] text-gray-400 mt-1 block">El ahorro cubre el 100% de WeBlock y genera ganancia neta.</span>
+                        <span class="text-base sm:text-lg font-bold text-accentCyan block" id="outNeto">Superávit Neto Estimado: +$280.000 USD</span>
+                        <span class="text-xs sm:text-sm text-gray-300 mt-1 block">El ahorro cubre el 100% de WeBlock y genera ganancia neta.</span>
                     </div>
 
-                    <button onclick="irAlFormulario()" class="w-full bg-accentCyan hover:bg-cyan-400 text-darkBg font-bold py-3.5 rounded-lg transition-all duration-200 text-sm">
+                    <button onclick="irAlFormulario()" class="w-full bg-accentCyan hover:bg-cyan-400 text-darkBg font-bold py-3.5 rounded-lg transition-all duration-200 text-base">
                         COMPLETAR SOLICITUD DE EVALUACIÓN
                     </button>
                 </div>
@@ -309,17 +283,17 @@
         </div>
     </section>
 
-    <!-- PDF 2: SECCIÓN FAQ COMPARATIVA Y VALOR OPERATIVO (DESPLEGABLE) -->
+    <!-- SECCIÓN FAQ COMPARATIVA -->
     <section class="py-16 px-6 max-w-4xl mx-auto">
         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Preguntas Frecuentes y Comparativa Operativa</h2>
         <div class="space-y-4">
             
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Cómo funciona el proceso de firma de contratos?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Llenado manual de datos, intercambio interminable de correos y firmas presenciales lentas.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Implementamos Firma OTP con sello criptográfico SHA-256.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Cierre de reservas confirmado en pocos minutos.</p>
@@ -327,11 +301,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿De qué manera la app atiende las consultas sobre los proyectos?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Asesores comerciales respondiendo dudas básicas y enviando planos todo el día.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Un asistente de IA local 24/7 responde instantáneamente sobre memorias descriptivas y planos.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> El equipo de ventas se enfoca al 100% en el cierre de operaciones.</p>
@@ -339,11 +313,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Qué perfil de comprador puede adquirir proyectos?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Limitado a compradores de unidades completas, excluyendo inversores de menor volumen.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Venta dual accesible, permitiendo adquirir unidades completas o por metros cuadrados.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Captación de volumen de capital superior.</p>
@@ -351,11 +325,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Cómo evalúa el cliente el rendimiento financiero?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Planillas Excel complejas que ralentizan la toma de decisión.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Simuladores interactivos con ajuste en tiempo real por CAC.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Aceleración directa en la decisión de compra.</p>
@@ -363,11 +337,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Cómo se gestiona el cobro y seguimiento de cuotas?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Registro de saldos manuales, verificación de comprobantes uno a uno y llamadas de cobro.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Notificación automática al celular y cuotas auto-ajustables.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Reducción drástica de la morosidad.</p>
@@ -375,11 +349,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Cómo se procesan y concilian los pagos de los clientes?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Transferencias informales con comprobación manual en la cuenta bancaria.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Carga directa de comprobantes en la app y validación centralizada.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Conciliación inmediata de fondos.</p>
@@ -387,11 +361,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿De qué manera se muestra el avance de obra?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Envío puntual de informes por correo o consultas individuales repetitivas.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Bóveda multimedia con galería comparativa (Render vs. Real), videos 3D y reportes técnicos.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Máxima transparencia e imagen de marca.</p>
@@ -399,11 +373,11 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Cómo se coordinan las visitas al desarrollo?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Coordinación manual entre el equipo comercial y el personal de obra.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Reserva directa de turnos desde la app con agenda sincronizada.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Agenda organizada sin superposición de visitas.</p>
@@ -411,123 +385,60 @@
             </details>
 
             <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
+                <summary class="font-semibold text-base sm:text-lg text-gray-100 list-none flex justify-between items-center">
                     ¿Qué diferencia hay entre WeBlock y un desarrollo de software propio?
                     <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
                 </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
+                <div class="mt-4 text-sm sm:text-base text-gray-300 space-y-2 border-t border-gray-800 pt-3 leading-relaxed">
                     <p><strong class="text-red-400">Método tradicional:</strong> Crear un sistema desde cero, con inversiones de $120.000 USD y meses de espera.</p>
                     <p><strong class="text-accentCyan">Con WeBlock:</strong> Plataforma Marca Blanca empaquetada y lista para operar de inmediato.</p>
                     <p><strong class="text-green-400">Beneficio comercial:</strong> Cero gasto inicial masivo de desarrollo.</p>
                 </div>
             </details>
-
-            <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
-                    ¿Cómo está diseñada la pantalla de inicio para el usuario?
-                    <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
-                    <p><strong class="text-red-400">Método tradicional:</strong> Información dispersa con exceso de separación que exige hacer mucho despliegue.</p>
-                    <p><strong class="text-accentCyan">Con WeBlock:</strong> Estructura optimizada con saludo inicial y la tarjeta "Mi Patrimonio" en primer plano.</p>
-                    <p><strong class="text-green-400">Beneficio comercial:</strong> Visualización inmediata de datos clave al abrir la app.</p>
-                </div>
-            </details>
-
-            <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
-                    ¿Cómo se organizan los proyectos en pantalla?
-                    <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
-                    <p><strong class="text-red-400">Método tradicional:</strong> Grillas asimétricas con tamaños y etiquetas poco uniformes.</p>
-                    <p><strong class="text-accentCyan">Con WeBlock:</strong> Disposición simétrica en 4 tarjetas uniformes con estados estandarizados.</p>
-                    <p><strong class="text-green-400">Beneficio comercial:</strong> Navegación limpia, clara e intuitiva.</p>
-                </div>
-            </details>
-
-            <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
-                    ¿Qué tipo de lenguaje utiliza la plataforma?
-                    <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
-                    <p><strong class="text-red-400">Método tradicional:</strong> Términos de tecnología blockchain o cripto que generan desconfianza o confusión.</p>
-                    <p><strong class="text-accentCyan">Con WeBlock:</strong> Terminología Fintech/B2B institucional (Unidades, Adhesiones y Participaciones).</p>
-                    <p><strong class="text-green-400">Beneficio comercial:</strong> Confianza institucional y alineación bancaria.</p>
-                </div>
-            </details>
-
-            <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
-                    ¿Cómo se garantiza la lectura en cualquier pantalla?
-                    <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
-                    <p><strong class="text-red-400">Método tradicional:</strong> Escala reducida en textos secundarios y montos financieros.</p>
-                    <p><strong class="text-accentCyan">Con WeBlock:</strong> Escala tipográfica ampliada en etiquetas y datos secundarios.</p>
-                    <p><strong class="text-green-400">Beneficio comercial:</strong> Accesibilidad completa y lectura cómoda.</p>
-                </div>
-            </details>
-
-            <details class="bg-darkCard p-5 rounded-xl border border-gray-800/80 cursor-pointer group">
-                <summary class="font-semibold text-sm sm:text-base text-gray-200 list-none flex justify-between items-center">
-                    ¿Cómo funcionan las notificaciones de la app?
-                    <span class="text-accentCyan group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div class="mt-4 text-xs sm:text-sm text-gray-300 space-y-2 border-t border-gray-800 pt-3">
-                    <p><strong class="text-red-400">Método tradicional:</strong> Alertas genéricas que se confunden con otras aplicaciones.</p>
-                    <p><strong class="text-accentCyan">Con WeBlock:</strong> Marca de sonido unificada con audios distintivos para cobros y rentabilidad.</p>
-                    <p><strong class="text-green-400">Beneficio comercial:</strong> Posicionamiento e identidad sonora de marca.</p>
-                </div>
-            </details>
-
         </div>
     </section>
 
-    <!-- FORMULARIO DE ADMISIÓN (PDF 1) -->
+    <!-- FORMULARIO DE ADMISIÓN -->
     <section id="formulario-section" class="py-20 px-6 bg-darkCard/80 border-t border-gray-800">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-10">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-3">Formulario de Admisión de Proyectos</h2>
-                <p class="text-sm text-gray-400">Evaluación previa para alianzas a costo $0 inicial.</p>
+                <p class="text-base text-gray-300">Evaluación previa para alianzas a costo $0 inicial.</p>
             </div>
 
             <form id="formAdmision" onsubmit="enviarFormulario(event)" class="space-y-8">
                 
                 <!-- BLOQUE A: DATOS DE CONTACTO -->
                 <div class="space-y-4">
-                    <h4 class="text-sm font-bold text-accentCyan uppercase tracking-wider"><b>Datos de Contacto</b></h4>
+                    <h4 class="text-base font-bold text-accentCyan uppercase tracking-wider"><b>Datos de Contacto</b></h4>
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" name="Nombre" placeholder="Nombre y Apellido *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none" required>
-                        <input type="text" name="Empresa" placeholder="Empresa / Desarrolladora *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none" required>
+                        <input type="text" name="Nombre" placeholder="Nombre y Apellido *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none" required>
+                        <input type="text" name="Empresa" placeholder="Empresa / Desarrolladora *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none" required>
+                        <input type="url" name="SitioWeb" placeholder="URL Sitio Web o Portfolio *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none" required>
                         
-                        <!-- PDF 1: Campo Obligatorio de Website / Portfolio -->
-                        <input type="url" name="SitioWeb" placeholder="URL Sitio Web o Portfolio *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none" required>
-                        
-                        <select name="Rol" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-gray-300 focus:border-accentCyan outline-none" required>
+                        <select name="Rol" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-gray-200 focus:border-accentCyan outline-none" required>
                             <option value="" disabled selected>Rol en la empresa *</option>
                             <option value="Socio/Director">Socio / Director</option>
                             <option value="Gerente Comercial">Gerente Comercial</option>
                             <option value="Otro">Otro</option>
                         </select>
-                        <input type="tel" name="Telefono" placeholder="WhatsApp / Teléfono directo *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none" required>
-                        <input type="email" id="formEmail" name="Email" placeholder="Email profesional *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none md:col-span-2" required>
+                        <input type="tel" name="Telefono" placeholder="WhatsApp / Teléfono directo *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none" required>
+                        <input type="email" id="formEmail" name="Email" placeholder="Email profesional *" class="bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none md:col-span-2" required>
                     </div>
                 </div>
 
                 <!-- BLOQUE B: TRAYECTORIA -->
                 <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-accentCyan uppercase tracking-wider"><b>Trayectoria de la Empresa</b></h4>
-                    <label class="block text-xs text-gray-400">¿Cuál es la trayectoria de la desarrolladora en el mercado?</label>
+                    <h4 class="text-base font-bold text-accentCyan uppercase tracking-wider"><b>Trayectoria de la Empresa</b></h4>
+                    <label class="block text-sm text-gray-300">¿Cuál es la trayectoria de la desarrolladora en el mercado?</label>
                     <div class="grid sm:grid-cols-3 gap-3">
-                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3 rounded-lg text-xs cursor-pointer hover:border-accentCyan">
+                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3.5 rounded-lg text-sm sm:text-base cursor-pointer hover:border-accentCyan">
                             <input type="radio" name="Trayectoria" value="Primer proyecto" class="accent-cyan-400" required> Primer proyecto en pozo
                         </label>
-                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3 rounded-lg text-xs cursor-pointer hover:border-accentCyan">
+                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3.5 rounded-lg text-sm sm:text-base cursor-pointer hover:border-accentCyan">
                             <input type="radio" name="Trayectoria" value="1 a 3 proyectos" class="accent-cyan-400"> 1 a 3 proyectos ejecutados
                         </label>
-                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3 rounded-lg text-xs cursor-pointer hover:border-accentCyan">
+                        <label class="flex items-center gap-2 bg-[#0B0E14] border border-gray-800 p-3.5 rounded-lg text-sm sm:text-base cursor-pointer hover:border-accentCyan">
                             <input type="radio" name="Trayectoria" value="Más de 4 proyectos" class="accent-cyan-400"> Más de 4 proyectos
                         </label>
                     </div>
@@ -535,9 +446,9 @@
 
                 <!-- BLOQUE C: VOLUMEN DEL DESARROLLO (GDV) -->
                 <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-accentCyan uppercase tracking-wider"><b>Volumen del Desarrollo (GDV)</b></h4>
-                    <label class="block text-xs text-gray-400">¿Cuál es el valor total de venta estimado del proyecto?</label>
-                    <select id="selectGdv" name="GDV_Estimado" onchange="evaluarOtroMonto(this)" class="w-full bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none">
+                    <h4 class="text-base font-bold text-accentCyan uppercase tracking-wider"><b>Volumen del Desarrollo (GDV)</b></h4>
+                    <label class="block text-sm text-gray-300">¿Cuál es el valor total de venta estimado del proyecto?</label>
+                    <select id="selectGdv" name="GDV_Estimado" onchange="evaluarOtroMonto(this)" class="w-full bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none">
                         <option value="1.5M-3M">$1.500.000 a $3.000.000 USD</option>
                         <option value="3M-5M">$3.000.000 a $5.000.000 USD</option>
                         <option value="5M-10M">$5.000.000 a $10.000.000 USD</option>
@@ -545,21 +456,20 @@
                         <option value="otro">Otro monto / Proyecto a medida</option>
                     </select>
                     <div id="otroMontoContainer" class="hidden">
-                        <input type="number" name="Monto_Personalizado_USD" placeholder="Escribe la cifra exacta en USD (Ej: 2500000)" class="w-full bg-[#0B0E14] border border-accentCyan rounded-lg p-3 text-sm text-white outline-none">
+                        <input type="number" name="Monto_Personalizado_USD" placeholder="Escribe la cifra exacta en USD (Ej: 2500000)" class="w-full bg-[#0B0E14] border border-accentCyan rounded-lg p-3.5 text-base text-white outline-none">
                     </div>
                 </div>
 
                 <!-- BLOQUE D: ESTRATEGIA DE COMERCIALIZACIÓN -->
                 <div class="space-y-4">
-                    <h4 class="text-sm font-bold text-accentCyan uppercase tracking-wider"><b>Estrategia Comercial</b></h4>
+                    <h4 class="text-base font-bold text-accentCyan uppercase tracking-wider"><b>Estrategia Comercial</b></h4>
                     <div>
-                        <label class="block text-xs text-gray-400 mb-2">¿Qué % del inventario planeas canalizar por la App?</label>
-                        <!-- PDF 1: Opción "Probar 1-2 unidades" ELIMINADA -->
-                        <div class="grid sm:grid-cols-2 gap-3 text-xs">
-                            <label class="bg-[#0B0E14] border border-gray-800 p-3 rounded-lg flex items-center gap-2 cursor-pointer">
+                        <label class="block text-sm text-gray-300 mb-2">¿Qué % del inventario planeas canalizar por la App?</label>
+                        <div class="grid sm:grid-cols-2 gap-3 text-sm sm:text-base">
+                            <label class="bg-[#0B0E14] border border-gray-800 p-3.5 rounded-lg flex items-center gap-2 cursor-pointer">
                                 <input type="radio" name="Porcentaje_Inventario" value="30-50%" class="accent-cyan-400" required> 30% a 50% del proyecto
                             </label>
-                            <label class="bg-[#0B0E14] border border-gray-800 p-3 rounded-lg flex items-center gap-2 cursor-pointer">
+                            <label class="bg-[#0B0E14] border border-gray-800 p-3.5 rounded-lg flex items-center gap-2 cursor-pointer">
                                 <input type="radio" name="Porcentaje_Inventario" value="60%+" class="accent-cyan-400"> Más del 60%
                             </label>
                         </div>
@@ -568,16 +478,16 @@
 
                 <!-- BLOQUE E: TIEMPOS DE EJECUCIÓN -->
                 <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-accentCyan uppercase tracking-wider"><b>Tiempos de Ejecución</b></h4>
-                    <label class="block text-xs text-gray-400">¿En qué etapa se encuentra el proyecto?</label>
-                    <select name="Etapa_Proyecto" class="w-full bg-[#0B0E14] border border-gray-800 rounded-lg p-3 text-sm text-white focus:border-accentCyan outline-none" required>
+                    <h4 class="text-base font-bold text-accentCyan uppercase tracking-wider"><b>Tiempos de Ejecución</b></h4>
+                    <label class="block text-sm text-gray-300">¿En qué etapa se encuentra el proyecto?</label>
+                    <select name="Etapa_Proyecto" class="w-full bg-[#0B0E14] border border-gray-800 rounded-lg p-3.5 text-base text-white focus:border-accentCyan outline-none" required>
                         <option value="Pozo">En pozo / lanzamiento inminente</option>
                         <option value="Construccion">En construcción avanzada</option>
                         <option value="Idea">Solo idea</option>
                     </select>
                 </div>
 
-                <button type="submit" id="btnSubmit" class="w-full bg-accentCyan hover:bg-cyan-400 text-darkBg font-extrabold text-base py-4 rounded-xl shadow-glow transition-all duration-200">
+                <button type="submit" id="btnSubmit" class="w-full bg-accentCyan hover:bg-cyan-400 text-darkBg font-extrabold text-base sm:text-lg py-4 rounded-xl shadow-glow transition-all duration-200">
                     SOLICITAR EVALUACIÓN EJECUTIVA
                 </button>
             </form>
@@ -589,10 +499,10 @@
         <div class="bg-darkCard border border-accentCyan/40 p-8 rounded-2xl max-w-lg text-center shadow-glow">
             <div class="w-16 h-16 bg-accentCyan/10 text-accentCyan rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">✓</div>
             <h3 class="text-2xl font-bold mb-4">Solicitud Recibida con Éxito</h3>
-            <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-8">
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed mb-8">
                 Gracias por compartir los datos de tu desarrollo. Nuestro equipo ejecutivo está auditando la información para validar la viabilidad del modelo de $0 costo inicial en tu proyecto.
             </p>
-            <a href="https://wa.me/5492215251835?text=Hola,%20acabo%20de%20enviar%20la%20evaluacion%20de%20mi%20proyecto" class="inline-block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 rounded-xl transition text-sm">
+            <a href="https://wa.me/5492215251835?text=Hola,%20acabo%20de%20enviar%20la%20evaluacion%20de%20mi%20proyecto" class="inline-block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 rounded-xl transition text-base">
                 Enviar mensaje por WhatsApp para agilizar la revisión
             </a>
         </div>
@@ -600,9 +510,9 @@
 
     <!-- FOOTER -->
     <footer class="py-8 text-center border-t border-gray-800/60 bg-[#0B0E14]">
-        <p class="text-sm font-semibold text-white mb-1">We<span class="text-accentCyan">Block</span></p>
-        <p class="text-xs text-gray-500 mb-4">Tu tecnología. Tu marca. Ganemos juntos.</p>
-        <div class="text-xs text-gray-600 space-x-4">
+        <p class="text-base font-semibold text-white mb-1">We<span class="text-accentCyan">Block</span></p>
+        <p class="text-sm text-gray-400 mb-4">Tu tecnología. Tu marca. Ganemos juntos.</p>
+        <div class="text-xs sm:text-sm text-gray-400 space-x-4">
             <a href="#" class="hover:underline">Políticas de Privacidad</a>
             <span>|</span>
             <a href="#" class="hover:underline">Términos de Servicio</a>
@@ -611,12 +521,12 @@
         </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE DE WHATSAPP (PDF 1: Estático, sin dependencia de cookies) -->
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
     <a href="https://wa.me/5492215251835?text=Hola,%20quiero%20evaluar%20un%20proyecto%20para%20mi%20desarrolladora" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-105 z-30">
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.012c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
     </a>
 
-    <!-- COOKIE CONSENT V3 SCRIPT (PDF 1) -->
+    <!-- COOKIE CONSENT V3 SCRIPT -->
     <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0/dist/cookieconsent.umd.js"></script>
     <script>
         CookieConsent.run({
@@ -646,7 +556,6 @@
             },
             onConsent: function({cookie}) {
                 if (CookieConsent.acceptedCategory('analytics')) {
-                    // Activar GTM / GA4 / Clarity si acepta
                     gtag('consent', 'update', {
                         'analytics_storage': 'granted'
                     });
@@ -673,31 +582,12 @@
     <!-- LÓGICA DE JAVASCRIPT PRINCIPAL -->
     <script>
         const FORMSPREE_ID = "TU_CODIGO_FORMSPREE"; 
-        const BREVO_WEBHOOK_URL = "https://your-brevo-webhook-endpoint.com/lead"; // API/Webhook de Brevo (PDF 1)
-
-        // PDF 1: Video Demo Gate Functionality
-        function desbloquearVideo() {
-            const email = document.getElementById('gateEmail').value;
-            if(email && email.includes('@')) {
-                document.getElementById('videoGateOverlay').classList.add('hidden');
-                document.getElementById('videoIframeContainer').classList.remove('pointer-events-none', 'blur-sm');
-                document.getElementById('formEmail').value = email;
-                document.getElementById('heroEmail').value = email;
-
-                // PDF 1: Evento vsl_play para GA4 y Webhook Paso 1 (Brevo)
-                trackGAEvent('vsl_play', { email: email });
-                enviarLeadBrevo({ email: email, estado: 'Incompleto' });
-            } else {
-                alert("Por favor, ingresá un correo profesional válido.");
-            }
-        }
+        const BREVO_WEBHOOK_URL = "https://your-brevo-webhook-endpoint.com/lead";
 
         function ejecutarPaso1() {
             const emailInput = document.getElementById('heroEmail');
             if(emailInput.value.includes('@')) {
                 document.getElementById('formEmail').value = emailInput.value;
-                
-                // PDF 1: Trigger step1_submitted y envio a Brevo
                 trackGAEvent('step1_submitted', { email: emailInput.value });
                 enviarLeadBrevo({ email: emailInput.value, estado: 'Incompleto' });
 
@@ -720,7 +610,7 @@
             }
         }
 
-        // SIMULADOR ACTUALIZADO (PDF 1: $120.000 USD de desarrollo y hasta 72 meses / $100M GDV)
+        // SIMULADOR
         const gdvSlider = document.getElementById('gdvSlider');
         const monthsSlider = document.getElementById('monthsSlider');
         const gdvDisplay = document.getElementById('gdvDisplay');
@@ -735,7 +625,6 @@
             const mesesAhorrados = plazoTradicional * 0.25; 
             const ahorroFinanciero = gdv * (0.01 * mesesAhorrados);
             
-            // Ajuste PDF 1: Estimación desarrollo software = $120.000 USD + 4% éxito
             const costoDesarrolloTradicional = 120000;
             const costoWeblock = gdv * 0.04;
             const beneficioNeto = (ahorroFinanciero + costoDesarrolloTradicional) - costoWeblock;
@@ -755,7 +644,6 @@
                 outNeto.parentElement.className = "bg-yellow-500/10 border border-yellow-500/40 p-4 rounded-xl text-center";
             }
 
-            // PDF 1: Track event calculator_used en GA4
             trackGAEvent('calculator_used', { gdv: gdv, plazo: plazoTradicional });
         }
 
@@ -763,7 +651,6 @@
         monthsSlider.addEventListener('input', calcularSimulador);
         calcularSimulador();
 
-        // PDF 1: Brevo Webhook Integration (Captura independiente de cookies)
         async function enviarLeadBrevo(payload) {
             try {
                 await fetch(BREVO_WEBHOOK_URL, {
@@ -776,7 +663,6 @@
             }
         }
 
-        // Envío por AJAX a Formspree / Backend
         async function enviarFormulario(e) {
             e.preventDefault();
             const btnSubmit = document.getElementById('btnSubmit');
@@ -799,7 +685,6 @@
                 if (response.ok) {
                     document.getElementById('thankYouModal').classList.remove('hidden');
                     
-                    // PDF 1: Eventos GA4 y Brevo Paso 2 (Completo)
                     trackGAEvent('form_completed', { email: dataObj.Email });
                     enviarLeadBrevo({ ...dataObj, estado: 'Completo' });
 
